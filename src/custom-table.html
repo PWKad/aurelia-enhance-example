@@ -1,0 +1,13 @@
+<template>
+  <a click.trigger="toggleShow()">
+    <content select="table-header"></content>
+  </a>
+  <div show.bind="isShowing">
+    <content select="table"></content>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      <button click.trigger="toggleShow()">${isShowing ? 'Hide' : 'Show'}</button>
+    </div>
+  </div>
+</template>

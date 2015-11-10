@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aurelia</title>
+    <link rel="stylesheet" href="jspm_packages/npm/font-awesome@4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="jspm_packages/github/twbs/bootstrap@3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body aurelia-app="main">
+    <div class="page-host">
+      <div class="col-xs-12">
+        <custom-table>
+          <table-header>
+            <h1>Users</h1>
+          </table-header>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                First Name
+                </th>
+                <th>
+                Last Name
+                </th>
+                <th>
+                Gender
+                </th>
+                <th>
+                State of Residence
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Patrick
+                </td>
+                <td>
+                  Walters
+                </td>
+                <td>
+                  Male
+                </td>
+                <td>
+                  Texas
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Rob
+                </td>
+                <td>
+                  Eisenberg
+                </td>
+                <td>
+                  Male
+                </td>
+                <td>
+                  Florida
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Julie
+                </td>
+                <td>
+                  Lerman
+                </td>
+                <td>
+                  Female
+                </td>
+                <td>
+                  Vermont
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </custom-table>
+      </div>
+    </div>
+
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+      System.import('aurelia-bootstrapper');
+    </script>
+  </body>
+</html>
